@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Images and Floats</title>
+    <style>
+        .w {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body class="w-75 mx-auto my-4">
+
+    <img src="https://images.pexels.com/photos/13211898/pexels-photo-13211898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="rounded w">
+    <img src="https://images.pexels.com/photos/18926727/pexels-photo-18926727/free-photo-of-doga-bitkiler-kirsal-calilar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="rounded-circle w">
+    <img src="https://images.pexels.com/photos/17007145/pexels-photo-17007145/free-photo-of-deniz-tatil-okyanus-tekneler.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="img-thumbnail w">
+    <img src="https://images.pexels.com/photos/13020734/pexels-photo-13020734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="img-fluid">
+
+    <br><br>
+
+    <img src="https://images.pexels.com/photos/13211898/pexels-photo-13211898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="w d-block mx-auto">
+    <!-- resim ortalanmış oldu d-bloc ve mx auto ile mx => x ekseninde eşit ortalam diyebiliriz. -->
+
+    <br><br>
+
+    <div class="clearfix">
+        <img src="https://images.pexels.com/photos/13211898/pexels-photo-13211898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="w float-start">
+        <img src="https://images.pexels.com/photos/18926727/pexels-photo-18926727/free-photo-of-doga-bitkiler-kirsal-calilar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="w float-end">
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias vel sapiente commodi sed, dolor iste
+        aspernatur facilis aut eum illo excepturi suscipit fugiat amet nihil accusantium aliquam nobis doloribus optio!
+    </p>
+
+    <br><br>
+    
+    <div class="clearfix">
+        <div class="bg-primary p-3 w-25 float-start"></div>
+        <div class="bg-warning p-3 w-75 float-end"></div>
+    </div>
+
+    <br><br>
+    
+
+
+</body>
+
+</html>
