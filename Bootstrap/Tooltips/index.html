@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Tooltips</title>
+  <style>
+    body {
+      padding: 70px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="btnShow" class="btn btn-danger" >Show</button>
+  <button id="btnHide" class="btn btn-danger" >Hide</button>
+  <button id="btnToggle" class="btn btn-danger" >Toggle</button>
+
+  <br><br>
+
+  <button id="btn1" type="button" class="btn btn-primary" data-bs-toogle="tooltip" title="tooltip text">Tooltip Text</button>
+  <button id="btn2" type="button" class="btn btn-primary" data-bs-toogle="tooltip" data-bs-html="true" title="<h1>tooltip text</h1><p>Lorem ipsum.</p>">Tooltip Html</button>
+
+  <br><br>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <script>
+
+      var btn = document.getElementById('btn1');
+      const btnTooltip1 = new bootstrap.Tooltip(btn);
+
+      var btn = document.getElementById('btn2');
+      const btnTooltip2 =new bootstrap.Tooltip(btn);
+
+      document.getElementById('btnShow').addEventListener('click', function(){
+        btnTooltip1.show();
+        btnTooltip2.show();
+      });
+      document.getElementById('btnHide').addEventListener('click', function(){
+        btnTooltip1.hide();
+        btnTooltip2.hide();
+      });
+      document.getElementById('btnToggle').addEventListener('click', function(){
+        btnTooltip1.toggle();
+        btnTooltip2.toggle();
+      });
+      
+    </script>
+
+</body>
+</html>
