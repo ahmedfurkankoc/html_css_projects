@@ -15,6 +15,52 @@
 </head>
 <body> 
 
+  <p>
+    <button type="button" class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#content">Button</button>
+    <a href="#" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#content">Link</a>
+    <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target=".card">Multiple</button>
+  </p>
+
+  <div class="card collapse" id="content">
+    <div class="card-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium cumque quisquam odio hic perferendis illum optio, quibusdam in autem reprehenderit at! Dolores maxime porro qui consequuntur placeat mollitia magnam!
+    </div>
+  </div>
+
+  <div class="card collapse" id="content2">
+    <div class="card-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium cumque quisquam odio hic perferendis illum optio, quibusdam in autem reprehenderit at! Dolores maxime porro qui consequuntur placeat mollitia magnam!
+    </div>
+  </div>
+
+  <br><br>
+
+  <div id="accordion">
+
+    <div class="card mb-1">
+      <div class="card-header bg-danger">
+        <a href="#collapseOne" class="card-link text-white" data-bs-toggle="collapse">Collapse One</a>
+      </div>
+
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora adipisci sapiente quibusdam quae laborum ullam distinctio neque impedit excepturi, quam, alias rem et eos nemo eum, accusamus quia cum.
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1">
+      <div class="card-header bg-danger">
+        <a href="#collapseTwo" class="card-link text-white" data-bs-toggle="collapse">Collapse Two</a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora adipisci sapiente quibusdam quae laborum ullam distinctio neque impedit excepturi, quam, alias rem et eos nemo eum, accusamus quia cum.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
