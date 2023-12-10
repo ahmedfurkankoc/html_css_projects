@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    position: relative;
+    background: white;
+}
+
+/* Navbar and Nav Links Styling */
+.navbar {
+    background-color: white;
+    /* Navbar background color */
+}
+
+.nav-link {
+    color: black;
+    /* Default text color */
+}
+
+.nav-link:hover {
+    color: burlywood;
+    /* Text color on hover */
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:hover {
+    background-color: burlywood;
+    /* Background color for active link */
+    color: black;
+    /* Text color for active link */
+}
+
+/* Optional: Adjust button style */
+.btn-primary {
+    background-color: burlywood;
+    border-color: burlywood;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: burlywood;
+    border-color: burlywood;
+    color: white;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.carousel-item img {
+    width: 1300px;
+    height: 800px;
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-btn{
+    padding: 10px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: #eff2f9;
+    color: #051441;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-out 0s;
+}
+.portfolio-btn:hover{
+    background-color: #01bcce;
+    color: white;
+}
+.portfolio-btn-wrapper > .active{
+    background-color: #01bcce;
+    color: white;
+}
