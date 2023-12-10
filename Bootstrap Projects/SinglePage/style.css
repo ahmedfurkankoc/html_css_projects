@@ -38,6 +38,18 @@ body {
     /* Text color for active link */
 }
 
+.section-subtitle{
+    font-size: 25px;
+    font-weight: 700;
+    color: #01bcce;
+}
+
+.section-title{
+    font-size: 55px ;
+    margin-bottom: 20px;
+}
+
+
 /* Optional: Adjust button style */
 .btn-primary {
     background-color: burlywood;
@@ -88,4 +100,9 @@ body {
 .portfolio-btn-wrapper > .active{
     background-color: #01bcce;
     color: white;
+}
+
+.bg-team{
+    background: #EFF2F9;
+    clip-path: polygon(0 0, 100% 12%, 100% 75%, 0 95%);
 }
